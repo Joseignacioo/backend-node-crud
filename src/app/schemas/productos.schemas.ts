@@ -4,6 +4,7 @@ export const CrearProductoSchema = z.object({
     body: z.object({
         nombre: z.string().nonempty('Nombre es requerido'),
         precio: z.number().nonnegative('no puede ser negativo'),
+        peso: z.number().nonnegative('no puede ser negativo'),
     })
 })
 

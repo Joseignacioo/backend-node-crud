@@ -1,6 +1,6 @@
 import express from 'express';
-import authRoutes from './routes/auth.routes'
-import productosRoutes from './routes/productos.routes'
+import authRoutes from '../routes/auth.routes'
+import productosRoutes from '../routes/productos.routes'
 
 const app = express()
 
