@@ -1,16 +1,6 @@
 import { Request, Response } from "express"
-import { ActualizarProductoBodyType, ActualizarProductoParamsType, ActualizarProductoQueryType, CrearProductoType } from "../schemas/productos.schemas";
+import { ActualizarProductoBodyType, ActualizarProductoParamsType, ActualizarProductoQueryType } from "../../schemas/productosSchemas";
 
-export const crearProducto = (
-    req: Request<unknown, unknown, CrearProductoType>,
-    res: Response
-
-) => {
-
-    console.log(req.body.nombre)
-    console.log(req.body.precio)
-    res.send('Crear Producto')
-};
 export const actualizarProducto = (
     req: Request<
         ActualizarProductoParamsType,
