@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { actualizarProducto, crearProducto } from '../controllers/productos.controllers';
+import { actualizarProducto } from '../controllers/productos/PutProductoControllers';
+import { crearProducto } from '../controllers/productos/PostProductoController';
 import { schemaValidation } from '../middlewares/schemaValidator.middleware';
-import { ActualizarProductoSchema, CrearProductoSchema } from '../schemas/productos.schemas';
+import { ActualizarProductoSchema, CrearProductoSchema } from '../schemas/productosSchemas';
 
 const router = Router()
 
